@@ -1,16 +1,32 @@
-<!DOCTYPE html>
-
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <title>Snake Game (40x40)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <h3>Snake Game (40×40, 400px)</h3>
 
+  <!-- Game container -->
+  <div id="gameContainer" aria-label="Snake Game Container"></div>
+
+  <!-- Scoreboard -->
+  <div class="scoreBoard" aria-live="polite">
+    <div class="hud">
+      <div>Score: <span id="score">0</span></div>
+      <div>Length: <span id="length">1</span></div>
+      <div class="status" id="gameStatus">Running</div>
+      <button id="restartBtn">Restart</button>
+    </div>
+  </div>
+
+  <div class="controls">
+    Controls: Arrow keys / WASD — Space to pause/resume. Snake moves 1 pixel every 100ms.<br>
+    Starts automatically at row 20, column 1, moving right.
+  </div>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
